@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <!-- 표 -->
+  <!-- width : 테이블가로사이즈 -->
+  <!-- thead, tfoot은 필수항목이 아님(구조에 따라 쓸수도 안쓸수도) -->
+  <!-- width에 퍼센트말고 그냥 숫자넣으면 픽셀단위로 -->
+  <!-- summary :  현재 표에 대한 설명  -->
+  <!-- border : 테이블테두리선 -->
+
+  <!-- 가로 : 행  세로 : 열 -->
+
+  <table border="1" width="100%" summary="3강의실">
+
+    <!-- caption : 표의제목 -->
+    <caption>시간표</caption>
+
+    <!-- 표셀간격 (세로단위로)   -->
+    <colgroup>
+      <!-- width를 정해주면 고정값이 됨, 정해주지않으면 자동값-->
+      <col width="100" />
+      <col width="200" />
+      <col />
+      <col />
+      <col />
+    </colgroup>
+
+  <!--tfoot의 위치는 때에 따라서 달라질 수 있음
+      head위나 head밑  (맨위에 놓아도 화면상으로는 밑에 표시됨)  -->
+    <tfoot>
+        <tr>
+          <td>tfoot</td>
+          <td>tfoot</td>
+          <td>tfoot</td>
+          <td>tfoot</td>
+          <td>tfoot</td>
+        </tr>
+    </tfoot>
+
+    <!-- thead : 테이블의 머릿말 -->
+    <thead>
+      <!-- tr(table row) : 테이블의 가로 -->
+      <tr>
+        <!-- th : 글자 굵고 가운데 정렬 -->
+        <th>월</th>
+        <th>화</th>
+        <th>수</th>
+        <th>목</th>
+        <th>금</th>
+      </tr>
+    </thead>
+
+    <!-- 테이블 information  -->
+    <tbody>
+      <tr>
+        <!-- colspan : 셀(td)을 가로로 합치는것  -->
+        <td colspan="5">title1</td>
+      </tr>
+    </tbody>
+
+    <tr>
+      <!-- td{title$}*4  -->
+      <!-- 셀(td)을 세로로 합치는것 -->
+      <td rowspan="2">title1</td>
+      <td>title2</td>
+      <td>title3</td>
+      <td>title4</td>
+      <td>title4</td>
+    </tr>
+    <tr>
+      <td>title1</td>
+      <td>title2</td>
+      <td>title3</td>
+      <td>title4</td>
+    </tr>
+  </table>
+
+  <!-- table[border="1" -> 여기안에있는것은 속성]>caption+(colgroup>col[width=""]*4)+
+    (thead>tr>th{text 여기는 안에 입력할 문자 아무거나 써봐}*4)+(tbody>tr>td{tbody}*4) -->
+  <!-- table[border="1"]>caption+(colgroup>col[width=""]*4)+(thead>tr>th{text}*4)+(tbody>tr>td{tbody}*4) -->
+  <!-- table>caption+(colgroup>col[width=""]*4)+(thead>tr>th{text})*4+(tbody>tr>td{tbody})*4  -->
+  <!-- 두개 다른것 비교해보긔 -->
+
+
+</body>
+</html>
