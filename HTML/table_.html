@@ -7,15 +7,6 @@
   <title>Document</title>
 </head>
 <body>
-  <!-- 표 -->
-  <!-- width : 테이블가로사이즈 -->
-  <!-- thead, tfoot은 필수항목이 아님(구조에 따라 쓸수도 안쓸수도) -->
-  <!-- width에 퍼센트말고 그냥 숫자넣으면 픽셀단위로 -->
-  <!-- summary :  현재 표에 대한 설명  -->
-  <!-- border : 테이블테두리선 -->
-
-  <!-- 가로 : 행  세로 : 열 -->
-
   <table border="1" width="100%" summary="3강의실">
 
     <!-- caption : 표의제목 -->
@@ -31,24 +22,10 @@
       <col />
     </colgroup>
 
-  <!--tfoot의 위치는 때에 따라서 달라질 수 있음
-      head위나 head밑  (맨위에 놓아도 화면상으로는 밑에 표시됨)  -->
-    <tfoot>
-        <tr>
-          <td>tfoot</td>
-          <td>tfoot</td>
-          <td>tfoot</td>
-          <td>tfoot</td>
-          <td>tfoot</td>
-        </tr>
-    </tfoot>
-
     <!-- thead : 테이블의 머릿말 -->
     <thead>
       <!-- tr(table row) : 테이블의 가로 -->
-      <tr>
-        <!-- th : 글자 굵고 가운데 정렬 -->
-        <!-- th에만 걸어야해 scope="col" : 월을 읽고 그에 해당하는 세로의 타이틀을 말해줌  -->
+      <tr>      
         <th scope="col">월</th>
         <th>화</th>
         <th>수</th>
