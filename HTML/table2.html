@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <fieldset>
+    <legend><h1>회원정보</h1></legend>
+    <ul>
+      <!-- name은 굳이 쓸필요있지만 value와 관련이 있음 -->
+      <li>
+        <label for="username">이름</label>
+         : <input type="text" name="" value="" id="username" placeholder="이름 입력" /></li>
+      <li>
+        <label for="userid">아이디</label>
+         : <input type="text" name="" value="" id="userid" placeholder="아이디 입력" />
+         <input type="submit" name="" value="중복확인" />
+       </li>
+      <li>
+        <label for="pwd">비밀번호</label>
+         : <input type="password" name="" value="" id="pwd" placeholder="비밀번호 입력" /></li>
+      <li>
+        <label for="pwd_check">비밀번호 확인</label>
+         : <input type="password" name="" value="" id="pwd_check" placeholder="비밀번호 확인" /></li>
+      <li>
+        <label for="">이메일 :
+           <input type="email" name="" value="" id="email" placeholder="Ex)email@naver.com" />
+      </li>
+      <li>
+        <label for="email_yes">이메일 수신동의</label>
+        : <input type="radio" name="email_check" value="" id="email_yes"  /><label for="email_yes">동의</label>
+        <input type="radio" name="email_check" value="" id="email_no"  />ㅗ<label for="email_no">ㅗ</label>
+      </li>
+      <li>
+        <label for="tong">전화번호</label> :
+        <select id="tong">
+          <option>SKT</option>
+          <option>KT</option>
+          <option>LG</option>
+        </select>
+        <input type="text" name="" value="" id="user_phonenumber" placeholder="-빼고 숫자만 입력" /></li>
+      <li>
+        <label for="e">정보이용</label>
+        <input type="checkbox" name="" value="" id="e" /><label for="e">개인정보이용</label>
+        <input type="checkbox" name="" value="" id="sa" /><label for="sa">개인정보사용</label>
+      </li>
+      <li>
+        <input type="submit" name="" value="가입">
+      </li>
+    </ul>
+  </fieldset>
+</body>
+</html>
