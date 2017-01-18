@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>layout_170118</title>
+  <!-- 이것을 하위버전에서도 쓸수있게끔하려면 이것을 여기에 넣어줌 -->
+</head>
+<body>
+  <!-- width값을 정해주지않으면 부모만큼 사이즈가 알아서 지정이됨 -->
+
+  <!-- header, aside, section, footer
+          -> div같은건데 이름붙은 div라고 생각하면됨  -->
+  <header style="border:1px #F00 solid; height:100px;">
+    header
+  </header>
+  <!-- float은 공중에 띄울속성에게 줌 -->
+  <aside style="border:1px #F00 solid; width:200px; height:600px; float:right;">
+    aside
+    <nav>
+      <ul>
+        <li><a href="">menu</a></li>
+        <li><a href="">menu</a></li>
+        <li><a href="">menu</a></li>
+        <li><a href="">menu</a></li>
+        <li><a href="">menu</a></li>
+      </ul>
+    </nav>
+  </aside>
+  <!-- <section style="border:1px #F00 solid; height:600px; background:orange;">
+        -> aside에서 float:left; 를주어 aside가 붕뜨게되고  밑에있던 section영역이 덮어씌워지게됨-->
+  <!-- <section style="border:1px #F00 solid; height:600px; background:orange; margin-left:200px;"> -->
+  <section style="border:1px #F00 solid; height:600px; background:orange; margin-right:200px;">
+    section
+    <article style="border:1px #F00 solid;  height:80px;">
+      article
+    </article>
+  </section>
+  <footer style="border:1px #F00 solid; height:80px;">
+    footer
+  </footer>
+
+
+
+</body>
+</html>
