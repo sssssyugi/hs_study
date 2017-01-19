@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>box_Model_170119</title>
+  <style>
+
+    /* id는 유일한 선택자(id는 #으로 선택)
+      --> 한페이지당 하나씩*/
+    #box{
+      /*width값에 아무도 안줬을경우 :  width:auto; */
+
+      /* 지금 body는 부모
+      ---> %는 html사이즈 기준으로 늘어남 */
+
+      /* width: auto; --> 부모만큼
+          -> 바디with를 50으로하면 얘도 바디만큼 줄어듬*/
+      width: auto;
+      height: 100px;
+      margin-left: 200px;
+    }
+
+    /* class는 .으로 선택 --> class는 중복적으로 선택가능*/
+    .bd{
+      border: 1px red solid;
+    }
+    
+  </style>
+</head>
+<body>
+
+  <div id="box" class="bd">
+
+  </div>
+
+</body>
+</html>
