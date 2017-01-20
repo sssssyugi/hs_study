@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>fixed2_170120</title>
+
+  <style>
+
+    /*html,body{height: 100%;}*/
+    html,body,div{height: 100%;}
+    div{background-attachment: fixed;
+        /*
+          -ms- background-size : w h
+          -webkit- background-size : w h
+          -moz- background-size : w h
+          -o-  background-size : w h
+          background-size : w h
+        */
+        /* cover : 가로값을 기준으로 화면을 맞춤*/
+        -webkit-background-size : cover;
+        background-size : cover;
+        background-position: center;
+    }
+    .a{background-image:url(../images/1.jpg); }
+    .b{background-image:url(../images/2.jpg); }
+    .c{background-image:url(../images/3.jpg); }
+    .d{background-image:url(../images/4.jpg); }
+    .e{background-image:url(../images/5.jpg); }
+
+  </style>
+
+
+</head>
+<body>
+  <div class="a"></div>
+  <div class="b"></div>
+  <div class="c"></div>
+  <div class="d" style="background-attachment:local;"></div>
+  <div class="e" style="background-image:url(../images/lee.jpg);"></div>
+  <div class="a"></div>
+  <div class="b"></div>
+  <div class="c"></div>
+  <div class="d"></div>
+  <div class="e"></div>
+  <div class="a"></div>
+  <div class="b"></div>
+  <div class="c"></div>
+  <div class="d"></div>
+</body>
+</html>
