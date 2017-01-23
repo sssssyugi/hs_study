@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>전자신문</title>
+
+  <style>
+    .wrap{
+      height: 540px;
+      width: 900px;
+      border: 1px black solid;
+      margin: 0 auto;
+    }
+
+    /* vertical : 이미지의 여백? */
+    img{vertical-align: top;}
+    ul{margin:0; padding:0; list-style:none;}
+    .pink{color: pink;}
+    header{
+      outline : 1px black solid;
+      margin: 0 30px 20px;
+      height: 91px;
+      padding-top: 20px;
+      /*margin-top: 10px; : 마진을 쓰게되면 부모자식간의 마진겹침현상이 일어남
+                            -> 그래서 패딩줄꺼야!!!*/
+    }
+    header h1{outline: 1px black solid; float: left; margin: 0;}
+    header article{outline: 1px black solid; float: right; margin-top: 10px;}
+    header .top_Btngroup{clear: left; font-size: 11px;}
+
+    section{height:380px; outline:1px #F00 solid; margin: 0 30px;}
+
+    p{border: 1px black solid; margin: 10px 0;}
+
+    .left_c{
+      outline:1px black solid;
+      width: 513px;
+      height: 100%;
+      float: left;
+    }
+
+    .left_c .first_news{font-size: 12px; font-size:12px; outline:1px #F00 solid; height:130px; margin-bottom:10px;}
+    .left_c .first_news h2{margin: 0;}
+    .left_c .first_news .thumb{outline: 1px red solid; width: 160px; height: 94px;  float: left;}
+    .left_c .first_news .thumb img{height: 100%; width: 100%;}
+    .left_c .first_news .list{outline: 1px red solid; margin-left: 175px;}
+    .left_c .first_news .list ul{margin: 0; padding: 0; list-style: none;}
+    .left_c .first_news .list ul a{text-decoration:none; color:#000;}
+
+    .left_c .second_news .thumb2 {outline:1px #F00 solid; width:162px; background-color:#CCC; float:left;}
+    .left_c .second_news .thumb2 li div{width:125px; height:78px; outline:1px #F00 solid; margin: 0 auto;}
+    .left_c .second_news .thumb2 li span{font-size:11px; margin: 5px 15px; border:1px #F00 solid; display:block;}
+    .left_c .second_news .thumb2 li div img{width:100%; height:100%;}
+    .left_c .second_news{font-size: 10px;}
+    .left_c .second_news .list2{outline:1px #F00 solid; margin-left:162px; padding-left:16px; font-size:14px; }
+    .left_c .second_news .list2 li{height:26px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+    .left_c .second_news ul a{text-decoration:none; color:#000;}
+    /*.ul_list{outline: 1px black solid; border-top: 2px red solid; padding-top: 9px; padding-bottom: 10px; background-color: #fafafa; padding-left: 0; }
+    .second_c{outline: 1px black solid; }*/
+
+
+    .right_c{
+      outline: 1px black solid;
+      /*width: 513px;*/
+      height: 100%;
+
+      /* 굳이 width값을 설정하지 않고 left_c에 float: left; 주고 마진을 줌*/
+      margin-left: 533px;
+      background-color: gray;
+    }
+
+  </style>
+
+</head>
+<body>
+
+  <div class="wrap">
+      <header>
+        <h1><a href="#"><img src="../images/nsd114836462.gif" alt=""></a></h1>
+
+        <article>
+          <a href="#"><img src="../images/468_60_01484900114786.jpg" alt=""></a>
+        </article>
+
+        <div class="top_Btngroup">
+          <button>구독하기</button>
+          <button>이용자한마디</button>
+          <button>소설보내기</button>
+          <span>01-23 14:00편집</span>
+        </div>
+
+
+      </header>
+      <section>
+        <div class="left_c">
+          <article class="first_news">
+            <h2 class="pink">'갤노트7' 발화 사태 일단락…153일간의 기록</h2>
+            <div class="first_c">
+              <div class="thumb">
+                <img src="../images/001.jpg" alt="">
+              </div>
+
+            <div class="list">
+              <p>삼성전자가 23일 갤럭시노트7 발화 원인을 배터리 자체 결함이라고
+                규명하며 `갤노트7 발화 사태`에 종지부를 찍었다. 갤럭시노트7이 첫선을 보인 것은 지난해
+                8월 2일(현지...</p>
+                <ul>
+                  <li><a href="#">`갤럭시노트7` 430만대 친환경 재활용 대책 나온다</a></li>
+                  <li><a href="#">`갤럭시노트7` 발화 원인 23일 발표… 배터리 결함 문제</a></li>
+                </ul>
+            </div>
+          </div>
+          <!-- first_c의 div -->
+
+          </article>
+          <!-- first_news의 article -->
+
+          <!-- <div class="left_c2"> -->
+            <article class="second_news">
+              <!-- <div class="second_c"> -->
+                <div class="thumb2">
+                  <ul>
+                    <li>
+                      <div><img src="../images/002.jpg" alt=""></div>
+                      <span><a href="#">SKT, 양자난수생성기 '소형 칩'화 성공</a></span></li>
+                    <li>
+                      <div><img src="../images/003.jpg" alt=""></div>
+                      <span><a href="#">“하나 더 설치 원해요”…아파트 베란다태양광 인기</a></span>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="list2">
+                  <ul>
+                    <li class="pink">세계 TV 시장, 양보다 질…대형화, 고급화 뚜렷</li>
+                    <li><a href="#">(2보)삼성 “갤노트7 발화 원인은 배터리 자체 결함”</a></li>
+                    <li><a href="#">폭스콘, 美에 70억달러 투자 디스플레이 공장설립</a></li>
+                    <li><a href="#">폴리실리콘값 16달러↑, OCI·한화케미칼 볕든다</a></li>
+                    <li class="pink">KT, 세계 최초 100% SDN 구축</li>
+                    <li><a href="#">네패스, 사람 뇌 구조 'AI 구현 칩' 만든다</a></li>
+                    <li><a href="#">권혁빈회장 최근 관심사? “샌드박스 게임 개척이죠”</a></li>
+                    <li><a href="#">현대카드 증강현실앱 '조커' 써보니…혜택이 '와르르'</a></li>
+                    <li><a href="#">화학약품 기준 초과 제품, 오픈마켓서 버젓이 판매</a></li>
+                  </ul>
+                </div>
+
+            </article>
+          </div>
+
+        <div class="right_c">
+
+        </div>
+      </section>
+
+  </div>
+
+</body>
+</html>
