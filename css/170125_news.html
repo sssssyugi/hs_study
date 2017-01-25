@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>170125_news</title>
+  <style>
+    *{margin: 0; padding: 0;}
+    ul,ol{list-style: none;}
+    a{text-decoration: none; color: #000;}
+    img{vertical-align: top;}
+    div{display: block;}
+
+    body{
+      background: url(http://static.naver.net/newsstand/img/20121231/bg_bd.png);
+    }
+
+    .wrap{
+      height: 540px; width: 900px;
+      outline: 1px red solid;
+      padding: 0 25px;
+      margin: 10px auto;
+      background-image:url(http://static.naver.net/newsstand/img/20121231/bg_panel.png);
+    }
+
+    /*wrap의 header안에 있는 class top*/
+    .wrap header.top{
+      height: 111px; width: 840px;
+      outline: 1px red solid;
+      margin: auto 30px;
+      padding-top: 10px;
+    }
+
+    .wrap .top h1{float: left; margin-top: 10px;}
+    .wrap .t_right{float: right; margin-top: 20px;}
+
+    .wrap .top .header_btn{clear: left;}
+
+    .wrap .contents {
+      width: 840px; height: 380px;
+      outline: 1px red solid;
+      margin: 20px 30px;
+    }
+    .wrap .contents .left{
+      width: 596px;
+      height: 380px;
+      outline: 1px blue solid;
+      float: left;
+      /*clear: right;*/
+    }
+
+
+    .wrap .contents .left .left1_contents strong{
+      font-size: 24px;
+      margin-bottom: 15px;
+      outline: 1px orange solid;
+    }
+    .wrap .contents .left .left1_contents span.thum{
+      width: 120px; height: 67px;
+      display: block;
+      float: left;
+      margin-right: 50px;
+      outline: 1px orange solid;
+    }
+    .wrap .contents .left .left1_contents img{
+      width: 100%; height: 100%;
+    }
+    .wrap .contents .left .left1_contents .two ul{
+      list-style: disc;
+      font-size: 12px;
+      padding-top: 10px;
+     }
+
+
+    .wrap .contents .left .left1_contents .first{margin-top: 15px; outline: 1px orange solid;}
+
+    .wrap .contents .left .left1_contents .second{
+      outline: 1px orange solid;
+      width: 596px;
+      height: 69px;
+      margin-top: 17px;
+      font-size: 13px;
+      font-weight:bold;
+    }
+    .wrap .contents .left .left1_contents .second .second_one{
+      /*background-color: red;*/
+      width: 285px;
+      height: 60px;
+      float: left;
+
+    }
+    .wrap .contents .left .left1_contents .second .second_two{
+      /*background-color: blue;*/
+      width: 285px;
+      height: 60px;
+
+      float: right;
+    }
+
+    .wrap .contents .left .left1_contents .third{width: 596px; height: 105px;}
+
+    .wrap .contents .left .left1_contents .third .thum2{
+      width: 100px; height: 56px;
+      font-size: 10px;
+      outline: 1px orange solid;
+      float: left;
+      margin-top: 8px; margin-left: 16px;
+    }
+    .wrap .contents .left .left1_contents .third .thum3{
+      width: 100px; height: 56px;
+      font-size: 10px;
+      outline: 1px orange solid;
+      float: left;
+      margin-top: 8px; margin-left: 16px;
+    }
+    .wrap .contents .left .left1_contents .third .thum4{
+      width: 100px; height: 56px;
+      font-size: 10px;
+      outline: 1px orange solid;
+      float: left;
+      margin-top: 8px; margin-left: 16px;
+    }
+    .wrap .contents .left .left1_contents .third .thum5{
+      width: 100px; height: 56px;
+      font-size: 10px;
+      outline: 1px red solid;
+      float: left;
+      margin-top: 8px; margin-left: 16px;
+    }
+    .wrap .contents .left .left1_contents .third .thum6{
+      width: 100px; height: 56px;
+      font-size: 10px;
+      outline: 1px orange solid;
+      float: left;
+      margin-top: 8px; margin-left: 16px;
+    }
+
+    .wrap .contents .left .left1_contents .fourth{
+      width: 596px; height: 66px;
+      outline: 1px orange solid;
+      margin-top: 10px;
+      font-size: 13px;
+      font-weight:bold;
+    }
+
+    .wrap .contents .left .left1_contents .fourth .four_one{
+      width: 285px; height: 60px;
+      /*background-color: red;*/
+      float: left;
+    }
+    .wrap .contents .left .left1_contents .fourth .four_two{
+      width: 285px; height: 60px;
+      /*background-color: blue;*/
+      float: right;
+    }
+
+    .wrap .contents .right{
+      width: 226px;
+      height: 380px;
+      outline: 1px blue solid;
+      float: right;
+      /*clear: left;*/
+    }
+
+    .wrap .contents .r_contents .right .r_text{
+      width: 226px; height: 100px;
+      outline: 1px orange solid;
+      font-size: 12px;
+
+    }
+
+    .wrap .contents .r_contents .right .r_text ul{
+      list-style: disc;
+      padding-left: 20px;
+      margin-top: 4px;
+    }
+
+    .wrap .contents .r_contents .right .r_thum{
+      width: 226px; height: 238px;
+      outline: 1px orange solid;
+    }
+    .wrap .contents .r_contents .right .r_first{margin-top: 10px;}
+
+    .wrap .contents .r_contents .right .r_thum .thum7{
+      width: 112px; height: 118px;
+      outline: 1px orange solid;
+      float: left;
+      margin: 1px 1px 0 0 ;
+    }
+    .wrap .contents .r_contents .right .r_thum .thum8{
+      width: 112px; height: 118px;
+      outline: 1px orange solid;
+      float: right;
+      margin: 1px 1px 0 0 ;
+    }
+    .wrap .contents .r_contents .right .r_thum .thum9{
+      width: 112px; height: 118px;
+      outline: 1px orange solid;
+      float: left;
+      margin: 1px 1px 0 0 ;
+    }
+    .wrap .contents .r_contents .right .r_thum .thum10{
+      width: 112px; height: 118px;
+      outline: 1px orange solid;
+      float: right;
+      margin: 1px 1px 0 0 ;
+    }
+    .wrap .contents .r_contents .right .r_thum .thum7 img{
+      width: 100%; height: 100%;
+    }
+    .wrap .contents .r_contents .right .r_thum .thum8 img{
+      width: 100%; height: 100%;
+    }
+    .wrap .contents .r_contents .right .r_thum .thum9 img{
+      width: 100%; height: 100%;
+    }
+
+    .wrap .contents .r_contents .right .r_thum .thum10 img{
+      width: 100%; height: 100%;
+    }
+
+  </style>
+
+</head>
+<body>
+  <div class="wrap">
+    <header class="top">
+      <h1><a href=""><img src="../images/nsd1142318.gif" alt=""></a></h1>
+
+      <article class="t_right">
+        <a href="#"><img src="../images/7174.jpg" alt=""></a>
+      </article>
+
+      <div class="header_btn">
+        <button>구독하기</button>
+        <button>이용자한마디</button>
+        <button>소셜보내기</button>
+        <span>01-25 14:02편집</span>
+      </div>
+
+    </header>
+
+  <!-- 섹션의 전체콘텐츠영역 -->
+    <section class="contents">
+      <!-- 왼쪽콘텐츠 -->
+      <article class="l_contents">
+        <div class="left">
+          <div class="left1_contents">
+            <strong><a href="#">"단속 무마 해줄게" 1억 뜯었다 수억 뜯긴 사연</a></strong>
+            <div class="first">
+              <div class="one">
+                <span class="thum"><a href="#"><img src="../images/111.jpg" alt=""></a></span>
+              </div>
+              <div class="two">
+                <ul>
+                  <li><a href="#">월급 빼고 진짜 다 오르네...햄버거 가격이 무려</a></li>
+                  <li><a href="#">'대통령 누드화' 논란 표창원, "난 앞으로도..."</a></li>
+                  <li><a href="#">"재단은 대통령 것·나는 바지사장" 정동춘 이제야</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="second">
+              <div class="second_one">
+                <span><a href="#">[단독] 문체부, 블랙리스트 '셀프 면죄부' 발급?</a></span>
+                <span><a href="#">노승일 또다른 폭로 "K재단 당초 모금 액수는"</a></span>
+                <span><a href="#">부동산펀드, '재산세 폭탄' 맞나</a></span>
+              </div>
+              <div class="second_two">
+                <span><a href="#">'호남 민심 굳히기' 문재인, 지지율이 벌써?</a></span>
+                <span><a href="#">'이태원 살인사건' 진범 패터슨, 법정최고형 확정</a></span>
+                <span><a href="#">'대통령 누드화' 갑론을박...예술일까, 비하일까?</a></span>
+              </div>
+            </div>
+            <div class="third">
+              <div class="thum2">
+                <span><a href="#"><img src="../images/11.jpg" alt=""></a></span>
+                <span><a href="#">中企·스타트업 위한 '반도체성장펀드' 액수만 무려</a></span>
+              </div>
+              <div class="thum3">
+                <span><a href="#"><img src="../images/22.jpg" alt=""></a></span>
+                <span><a href="#">"단속 무마 해줄게" 1억 뜯었다 수억 뜯긴 사연</a></span>
+              </div>
+              <div class="thum4">
+                <span><a href="#"><img src="../images/33.jpg" alt=""></a></span>
+                <span><a href="#">"구태정치 비슷" 지적에 반기문 '이론적'으로 반박</a></span>
+              </div>
+              <div class="thum5">
+                <span><a href="#"><img src="../images/44.jpg" alt=""></a></span>
+                <span><a href="#">청년 백수 왜 이렇게 많을까? 대졸자 들여다보니</a></span>
+              </div>
+              <div class="thum6">
+                <span><a href="#"><img src="../images/55.jpg" alt=""></a></span>
+                <span><a href="#">어쩐지 수상했던 그 보수단체, 배후는 바로</a></span>
+              </div>
+            </div>
+            <div class="fourth">
+              <div class="four_one">
+                <span><a href="#">노승일 또다른 폭로 "K재단 당초 모금 액수는"</a></span>
+                <span><a href="#">'이태원 살인사건' 진범 패터슨, 법정최고형 확정</a></span>
+                <span><a href="#">'대통령 누드화' 갑론을박...예술일까, 비하일까?</a></span>
+              </div>
+              <div class="four_two">
+                <span><a href="#"><img src="../images/008.jpg" alt="" style="width:75px; height:20px;">[서경씨의 #샤넬보다_재테크]"나도 황제금리 받아봐?" 신용등급 1등급 만들기 프로젝트</a></span>
+                <span><a href="#">부동산펀드, '재산세 폭탄' 맞나</a></span>
+                <span><a href="#">서울모터쇼서 베일 벗는 네이버 스마트카</a></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- 오른쪽콘텐츠 -->
+      <article class="r_contents">
+        <div class="right">
+          <div class="r_first">
+            <div class="toppic">
+              <span><img src="../images/best_click.jpg" alt=""></span>
+            </div>
+            <div class="r_text">
+              <ul>
+                <li><a href="#">박사모 분노 “표창원 니 마누라도 </a></li>
+                <li><a href="#">1인당 130만원 지급? 이재명 시보세</a></li>
+                <li><a href="#">최순실 “억울하다” 고함 생중계…특소 </a></li>
+                <li><a href="#">어쩐지 수상했던 그 보수단체, 배후 </a></li>
+                <li><a href="#">노승일 또다른 폭로 "K재단 당초 금</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="r_thum">
+            <div class="thum7">
+              <span><a href="#"><img src="../images/009.jpg" alt=""></a></span>
+              <span></span>
+            </div>
+            <div class="thum8">
+              <span><a href="#"><img src="../images/010.jpg" alt=""></a></span>
+              <span></span>
+            </div>
+            <div class="thum9">
+              <span><a href="#"><img src="../images/011.jpg" alt=""></a></span>
+              <span></span>
+            </div>
+            <div class="thum10">
+              <span><a href="#"><img src="../images/012.jpg" alt=""></a></span>
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+  </div>
+  <!--  wrap의 div end -->
+</body>
+</html>
