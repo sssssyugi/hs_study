@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>170126_selecter</title>
+
+  <style>
+  /*.wrap{
+    border: 1px red solid;
+  }
+  #title{
+    border: 1px red solid;
+  }*/
+  /* 클래스와 id둘다 선택가능, 줄바꿈도 가능
+  .wrap,
+  #title{border: 1px red solid;}*/
+
+  /*자식요소 선택자*/
+  /* wrap 안에 있는 모든 li선택가능
+  .wrap li{border: 1px red solid;}*/
+
+  /* 자식요소 선택자
+      -> > 이것은 부등호  */
+  /*.wrap > li{border: 1px red solid;}  wrap안에  바로 li없기때문에 실행불가*/
+  /*.wrap > h2{border: 1px red solid;}*/
+
+  /*.wrap li li{border: 1px red solid;} wrap안에있는 li안에 li*/
+
+  /*.wrap li ul>li{border: 1px red solid;}  wrap 안에 li안에 ul안에있는 모든 li*/
+
+  /*wrap안에 있는 a와 wrap안에있는 모든 ul
+  .wrap a,
+  .wrap ul{border: 1px red solid;}*/
+
+
+  /*#title + ul{border: 1px red solid;} title안에있는 ul*/
+
+  /*.target + li {border: 1px red solid;} target안에있는 그다음 li*/
+
+  /* taget을 기점으로 다음꺼 모든것(next all)
+  .target~li{border: 1px red solid;} */
+
+
+  /* : -> 필터선택자 */
+  /*first-child : 첫번째 li만부름
+  .wrap>ul>li:first-child{border: 1px red solid;} */
+  /*.wrap>ul>li:last-child{border: 1px red solid;} 마지막 li만! 하지만 얘만 호만성이 떨어져 first-child를 많이씀 */
+
+  /*방문 전 링크상태
+  a:link{border: 1px red solid;} */
+
+  /*a:hover{color: red;} 마우스를 올렸을때 색이 바뀜 (굉장히많이씀)*/
+  /*a:active{color: #0f0;} 마우스로 클릭했을때 색이 바뀜 */
+  /*a:visited{color: #00f;} 한번눌렀다온데에는 자국이남음 */
+
+  /*.wrap li ul{display: none;}*/
+  /*.wrap li:hover ul{display: block;} 마우스를 올렸을때 숨겨져있던 li들이 나옴 */
+
+  /*
+  .wrap li ul{height: 0; overflow: hidden;} -> 겹쳐져서 안보임
+  .wrap li:hover ul{height: 100px;} 1초동안보여짐 */
+
+  /*
+  .wrap li ul{height: 0; overflow: hidden; transition:1s;}
+  .wrap li:hover ul{height: 100px;}*/
+
+  /* input선택할때 */
+  /*[type="text"]{border: 1px red solid;}*/
+
+  /*img[alt="pdf파일"]{border: 1px red solid;} 한글도됨 */
+
+  /*img[alt^="파일"]{border: 1px red solid;} ^ -> 파일이라고 시작하는 부분 다 선택됨 */
+
+  /*img[alt$="파일"]{border: 1px red solid;} $ -> 파일이라고 끝나는 부분 다 선택됨 */
+
+  /*img[alt*="w"]{border: 1px red solid;} * -> w가있는것 다 선택됨 */
+
+  /*[id^="title"]{font-size: 50px;}
+  [id$="solid"]{border: 1px red solid;}
+  [id*="red"]{color: red;}*/
+
+  /*html5같은경우는 before 와 after에는 :: 두개!*/
+  /*가상선택자 : 콘텐츠라는 속성을달고다님*/
+  .name::after{
+    content: "";
+    border: 1px red solid;
+    display: block;
+    width: 100px;
+    height: 100px;
+  }
+  .name::before{
+    content: "";
+    border: 1px red solid;
+    display: block;
+    width: 100px;
+    height: 100px;
+  }
+
+  q::before{
+    /*content: "*";*/
+    content: open-quote;
+  }
+  q::after{
+    /*content: "*";*/
+    content: close-quote;
+  }
+
+  </style>
+
+</head>
+<body>
+
+  <p><q>안녕하세요</q></p>
+
+  <span class="name">슈기</span>
+
+  <div class="wrap title"><!-- 클래스가 두개 -->
+    <h2 id="title_red_solid">title</h2>
+    <ul>
+      <li><a href="">text</a>
+        <ul>
+          <li><a href="#">text</a></li>
+          <li><a href="#">text</a></li>
+        </ul>
+        </li>
+      <li class="target"><a href="#">text</a></li>
+      <li><a href="#">text</a></li>
+      <li><a href="#">text</a>
+        <ul>
+          <li><a href="#"><input type="text" name="" value=""></a></li>
+          <li><a href="#"><input type="button" name="" value="확인"></a></li>
+          <li><a href="#"></a></li>
+          <li><a href="#"></a></li>
+        </ul>
+      </li>
+      <li><a href="#">text</a></li>
+      <li><a href="#">text</a></li>
+      <li><a href="#">text</a>
+        <ul>
+          <!-- 이미지가없으면 글자라도나와야함 : 이것이 바로 대체 텍스트!!! -->
+          <li><a href="#"><img src="" alt="파일pdf"></a></li>
+          <li><a href="#"><img src="" alt="파일html"></a></li>
+          <li><a href="#"><img src="" alt="파일hwp"></a></li>
+          <li><a href="#"><img src="" alt="psd파일"></a></li>
+          <li><a href="#"><img src="" alt="psd파일"></a></li>
+          <li><a href="#"><img src="" alt="psd파일"></a></li>
+          <li><a href="#"><img src="" alt="psd파일"></a></li>
+          <li><a href="#"><img src="" alt="psd파일"></a></li>
+        </ul>
+      </li>
+      <li><a href="#">text</a></li>
+    </ul>
+    <input type="button" name="" value="확인" />
+  </div>
+
+
+</body>
+</html>
