@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>170131_overflow_float</title>
+  <style>
+  /* body p.text{color: red}
+    p.text{color: blue !important}!important -> 우선순위*/
+
+  /* 컨텐츠는 오버플로워를 침범할 수 없음 */
+  .wrap{border: 1px #F00 solid; overflow: hidden;}
+  .left_box{
+    border: 1px #F00 solid;
+    width: 200px;
+    height: 200px;
+    float: left;
+  }
+  .test_box{
+    border: 2px #06F solid;
+    width: 200px;
+    height: 200px;
+
+    /* 박스만 움직이고 컨텐츠는 움직이지 않음 */
+    /*margin-top: 220px;*/
+    margin-top: 20px;
+  }
+  </style>
+</head>
+<body>
+  <!-- <p class="text">hello</p> -->
+  <!--w auto -> 부모만큼, h auta -> 컨텐츠만큼 -->
+  <div class="wrap">
+    <div class="left_box">
+    </div>
+  </div>
+  <div class="test_box">
+    test_box
+  </div>
+
+</body>
+</html>

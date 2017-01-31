@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>170131_position</title>
+
+  <style>
+
+      /*width: 500px; height: 200px;*/
+      /*border: 1px black solid;*/
+      /*position: relative : 한번에 두가지값만
+      position: relative;
+      현재값으로부터
+      margin: 0 auto;
+      left: 50%;
+      margin-left: -250px;*/
+
+      /*[class^="box"]{border: 1px red solid; position: absolute;}
+      .box1{background:#ffffcc; left: 0; right: 50%; top:0; bottom: 50%;}
+      .box2{background:#99ffff; left: 50%; right: 0; top:0; bottom: 50%;}
+      .box3{background:#ff9999; left: 0; right: 50%; top:50%; bottom: 0;}
+      .box4{background:#cc00ff; left: 50%; right: 0; top:50%; bottom: 0;}*/
+
+      /*[class^="box"]{border:1px #F00 solid; position:absolute; width:300px; height:300px;}
+      .box1{background: #F00; left:100px; top:100px;}
+      z-index -> 높낮이조절 (position이 있어야 사용가능)
+      .box2{background: #FF0; left:150px; top:150px; z-index:2;}
+      .box3{background: #F0F; left:200px; top:200px; z-index:1;}
+      .box4{background: #0FF; left:250px; top:250px;}*/
+
+
+      /*.box1{
+        border:1px #F00 solid;
+        width:500px;
+        height: 500px;
+        position:relative;
+        margin:0 auto;
+      }
+      .box2{
+        border:1px #F00 solid;
+        width:200px;
+        height: 200px;
+        border-color:#00F;
+        position:absolute;;
+        right:0;
+      }*/
+
+      [class^="box"]{border: 1px red solid;}
+      .box1{
+        width: 500px;
+        height: 500px;
+
+        /*가운데정렬*/
+        margin: 0 auto;
+        position: relative;
+
+      }
+      .box2{
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        bottom: 0px;
+      }
+      .box3{
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        right: 0;
+      }
+
+  </style>
+
+</head>
+<body>
+
+  <div class="box1">
+    <div class="box2">
+      <div class="box3"></div>
+    </div>
+  </div>s
+
+</body>
+</html>
