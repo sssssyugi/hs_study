@@ -13,7 +13,8 @@
     img{vertical-align: top;}
     div{display: block;}
 
-    .wrap .left_contents .leftMain_text{margin-top: 5px; font-weight: bold; color: #333;}
+    .wrap .left_contents .leftMain_text{margin-top: 5px; font-weight: bold; color: #555;}
+    .wrap .right_contents .rightMain_text{font-weight: bold; color: #555; display: block; padding-top: 7px; font-size: 16px; float: left;}
 
     .wrap{
       width: 990px; height: 1800px;
@@ -146,7 +147,7 @@
 
     .wrap .left_contents{
       width: 732px;
-      height: 1500px;
+      height: 1178px;
       outline: 1px black solid;
       float: left;
       margin-top: 5px;
@@ -369,7 +370,7 @@
 
     .wrap .right_contents{
       width: 236px;
-      height: 832px;
+      height: 1178px;
       outline: 1px black solid;
       float: right;
       margin-top: 5px;
@@ -378,7 +379,8 @@
     .wrap .right_contents .login_box{
       width: 215px; height: 88px;
       padding: 10px 10px 5px 10px;
-      outline: 1px blue solid;
+      border-right: 1px #c6c7c6 solid;
+      background: #eee;
     }
     .wrap .right_contents .login_box ul{width: 146px; float: left;}
 
@@ -396,18 +398,180 @@
     .wrap .right_contents .login_box .r_list{
       margin-top: 7px;
       width: 215px; height: 20px;
-      outline: 1px blue solid;
-      /*font-size: 5px;*/
-    }
-    .wrap .right_contents .login_box .r_list .check_list li{
-      float: left;
+      outline: 1px #000 solid;
       font-size: 10px;
-      /*margin-left: 2px;*/
+      /*font-size: 5px;*/
     }
 
     .wrap .right_contents .login_box .r_list input{
       width: 15px; height: 15px;
+      float: left;
     }
+
+    .wrap .right_contents .login_box .r_list ul>li>a{
+      float: left;
+      font-size: 10px;
+    }
+
+    .wrap .right_contents .login_box .r_list .join a{float: left;}
+
+    .wrap .right_contents .right_issue{
+      width: 236px;
+      height: 290px;
+      outline: 1px #000 solid;
+    }
+
+    .wrap .right_contents .right_issue .issue_top{
+      width: 236px;
+      height: 40px;
+      outline: 1px #000 solid;
+    }
+
+    .wrap .right_contents .right_issue .issue_1{
+      width: 100%;
+      height: 83px;
+      outline: 1px #000 solid;
+    }
+
+    .wrap .right_contents .right_issue .issue_1 .issue_text{
+      width: 145px;
+      height: 100%;
+      outline: 1px #000 solid;
+      float: left;
+      font-size: 12px
+    }
+
+    .wrap .right_contents .right_issue .issue_2{
+      width: 100%;
+      height: 83px;
+      outline: 1px #000 solid;
+    }
+    .wrap .right_contents .right_issue .issue_2 .issue_text{
+      width: 145px;
+      height: 100%;
+      outline: 1px #000 solid;
+      float: left;
+      font-size: 12px;
+    }
+    .wrap .right_contents .right_issue .issue_3{
+      width: 100%;
+      height: 83px;
+      outline: 1px #000 solid;
+    }
+    .wrap .right_contents .right_issue .issue_3 .issue_text{
+      width: 145px;
+      height: 100%;
+      outline: 1px #000 solid;
+      float: left;
+      font-size: 12px
+    }
+
+    .wrap .right_contents .right_issue  .issue_text img{
+      margin-left: 5px;
+      /*margin-top: 10px;*/
+    }
+
+    .wrap .right_contents .right_issue .issue_1 .issue_picture{
+      float: right;
+      width: 90px;
+      height: 100%;
+    }
+    .wrap .right_contents .right_issue .issue_2 .issue_picture{
+      float: right;
+      width: 90px;
+      height: 100%;
+    }
+    .wrap .right_contents .right_issue .issue_3 .issue_picture{
+      float: right;
+      width: 90px;
+      height: 100%;
+    }
+
+    .wrap .right_contents .right_issue .issue_top .rightMain_number img{
+      width: 12px;height: 12px;
+    }
+
+    .wrap .right_contents .rightMain_number{
+      font-size: 10px;
+      padding-top: 15px;
+      float: right;
+    }
+
+    .wrap .right_contents .right_issue .issue .issue_picture img{padding-top: 9px; width: 91px;}
+
+    .issue span{display: block;}
+
+    .wrap .right_contents .right_issue .issue_t{
+        margin-left: 25px;
+    }
+
+    .wrap .right_contents .car_news{
+      width: 236px;
+      height: 126px;
+      outline: 1px #000 solid;
+      margin-top: 10px;
+      float: left;
+      font-size: 11px;
+    }
+
+    .wrap .right_contents .car_news span{
+      display: block;
+      float:  left;
+    }
+
+    .wrap .right_contents .car_news .car{
+      width: 236px;
+      height: 60px;
+      outline: 1px #000 solid;
+    }
+
+    .wrap .right_contents .car_news .news{
+      width: 100%;
+      height: 66px;
+      outline: 1px #000 solid;
+    }
+    .wrap .right_contents .car_news .news li{margin-left: 18px;list-style: disc;}
+
+    .wrap .right_contents .community_hot{
+      width: 236px; height: 150px;
+      outline: 1px #000 solid;
+      margin-top: 210px;
+      font-size: 11px;
+    }
+
+    .wrap .right_contents .community_hot img{margin-top: 5px;}
+    .wrap .right_contents .community_hot span{display: block;}
+
+    .wrap .right_contents .community_hot .community_pic{
+      width: auto;
+      float: left;
+    }
+    .wrap .right_contents .community_hot .community_text{
+      float: left;;
+    }
+    .wrap .right_contents .community_hot .community_text li{margin:15px 0 15px 10px;}
+
+    .wrap .right_contents .car_rank{
+      margin-top: 40px;
+      width: 236px;
+      height: 230px;
+      outline: 1px #000 solid;
+      font-size: 13px;
+    }
+
+    .wrap .right_contents .rank_text{
+      height: 88px;
+      width: 145px;
+      outline: 1px #000 solid;
+      float: left;
+    }
+    .wrap .right_contents .rank_picture{
+      width: 90px;
+      height: 88px;
+      outline: 1px #000 solid;
+      float: right;
+    }
+
 
   </style>
 
@@ -416,17 +580,6 @@
   <div class="wrap">
     <div class="top">
       <div class="cont1">
-        <a href="#"><img src="../images/bobea/top_star.png" alt="">즐겨찾기</a>
-        <a href="#"><img src="../images/bobea/top_number.png" alt="">기아 K5하이브리드 (12년식)</a>
-        <span><a href="#">로그인</a>|</span>
-        <span><a href="#">회원가입</a>|</span>
-        <span><a href="#">마이페이지<img src="../images/bobea/top_arrow_down.png" alt=""></a>|</span>
-        <span><a href="#">쪽지</a>|</span>
-        <span><a href="#">찜한차량</a>|</span>
-        <span><a href="#">고객차량</a>|</span>
-        <span><a href="#">전체메뉴<img src="../images/bobea/top_arrow_down.png" alt=""></a>|</span>
-        <span><a href="#"><img src="../images/bobea/top_mobile.png" alt="">모바일</a></span>
-      </div>
     </div>
 
     <div class="header">
@@ -709,16 +862,168 @@
           </ul>
           <button type="submit" name="" value="로그인"><span>로그인</span></button>
           <div class="r_list">
-            <div class="check_list">
-              <ul>
-                <li>
-                  <input type="checkbox" name="" value=""><span>ID저장</span>
-                </li>
-                <li><a href="#">회원가입</a></li>
-                <li><a href="#">ID / 비밀번호찾기</a></li>
-              </ul>
+            <!-- <div class="check_list"> -->
+              <!-- <ul>
+                <li><input type="checkbox" name="" value=""><span>ID저장</span></li>
+                <li class="join"><a href="#">회원가입</a></li>
+                <li class="join"><a href="#">ID / 비밀번호찾기</a></li>
+              </ul> -->
+            <!-- </div> -->
+            <span><input type="checkbox" name="" value="">ID저장</span>
+            <span><a href="#">회원가입</a></span>
+            <span><a href="#">ID / 비밀번호찾기</a></span>
+          </div>
+      </div>
+
+      <div class="right_issue">
+        <div class="issue_top">
+          <span class="rightMain_text">커뮤니티 핫이슈</span>
+          <div class="rightMain_number">
+            <span><img src="../images/bobea/icon_l.gif" alt=""></span>
+            <span>1/20</span>
+            <span><img src="../images/bobea/icon_r.gif" alt=""></span>
+          </div>
+        </div>
+        <div class="issue">
+          <div class="issue_1">
+            <div class="issue_text">
+              <span><img src="../images/bobea/number1.png" alt=""></span>
+              <div class="issue_t">
+                <span>길가에 멈춰선 차량</span>
+                <span>돕는 훈훈한 모습</span>
+              </div>
+            </div>
+            <div class="issue_picture">
+              <span><img src="../images/bobea/issue1.png" alt=""></span>
             </div>
           </div>
+          <div class="issue_2">
+            <div class="issue_text">
+              <span><img src="../images/bobea/number2.png" alt=""></span>
+              <div class="issue_t">
+                <span>유리를 박살내고</span>
+                <span>차량용품 싹쓸이</span>
+              </div>
+            </div>
+            <div class="issue_picture">
+              <span><img src="../images/bobea/issue2.png" alt=""></span>
+            </div>
+          </div>
+          <div class="issue_3">
+            <div class="issue_text">
+              <span><img src="../images/bobea/number3.png" alt=""></span>
+              <div class="issue_t">
+                <span>짙은안개 고속도로</span>
+                <span>살벌한 교통사고</span>
+              </div>
+            </div>
+            <div class="issue_picture">
+              <span><img src="../images/bobea/issue3.png" alt=""></span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="issue_top">
+        <span class="rightMain_text">자동차뉴스</span>
+        <div class="rightMain_number">
+          <span>더보기</span>
+          <img src="../images/bobea/icon_r.gif" alt="">
+        </div>
+      </div>
+      <div class="car_news">
+        <div class="car">
+          <span><img src="../images/bobea/news.png" alt=""></span>
+          <span>르노삼성 부산공장</span>
+          <span>중대형 핵심 기지 될것</span>
+        </div>
+        <div class="news">
+          <ul>
+            <li><a href="#">쌍용 EREV, 전기자동차 2015년 양산</a></li>
+            <li><a href="#">[2012 결산] 전자.자동차.철강 등</a></li>
+            <li><a href="#">남양연구소 'T-LPDi'상용화 박차</a></li>
+            <li><a href="#">올해들어 수입차 CEO 대거 교체</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="issue_top">
+        <span class="rightMain_text">커뮤니티 인기글</span>
+        <div class="rightMain_number">
+          <span>더보기</span>
+          <img src="../images/bobea/icon_r.gif" alt="">
+        </div>
+      </div>
+
+      <div class="community_hot">
+        <div class="community_pic">
+          <ul>
+            <li><a href="#"><img src="../images/bobea/comu1.png" alt=""></a></li>
+            <li><a href="#"><img src="../images/bobea/comu2.png" alt=""></a></li>
+            <li><a href="#"><img src="../images/bobea/comu3.png" alt=""></a></li>
+          </ul>
+        </div>
+        <div class="community_text">
+          <ul>
+            <li>
+              <a href="#">
+                <span>신호위반 접촉사고</span>
+                <span>망설임없이 바로도주</span>
+              </a></li>
+            <li><a href="#">
+              <span>중앙선을 넘어선순간</span>
+              <span>대형사고간신히 모면</span>
+            </a></li>
+            <li><a href="#">
+              <span>짙은안개고속도로</span>
+              <span>살벌한 추돌사고</span>
+            </a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="issue_top">
+        <span class="rightMain_text">내차소 인기순위</span>
+        <div class="rightMain_number">
+          <span>더보기</span>
+          <img src="../images/bobea/icon_r.gif" alt="">
+        </div>
+      </div>
+
+      <div class="car_rank">
+        <div class="rank_1">
+          <div class="rank_text">
+            <span><img src="../images/bobea/number1.png" alt=""></span>
+            <div class="rank_t">
+              <span>현대 투스카니</span>
+            </div>
+          </div>
+          <div class="rank_picture">
+            <span><img src="../images/bobea/issue1.png" alt=""></span>
+          </div>
+        </div>
+        <div class="rank_2">
+          <div class="rank_text">
+            <span><img src="../images/bobea/number2.png" alt=""></span>
+            <div class="rank_t">
+              <span>현대 투스카니</span>
+            </div>
+          </div>
+          <div class="rank_picture">
+            <span><img src="../images/bobea/issue2.png" alt=""></span>
+          </div>
+        </div>
+        <div class="rank_3">
+          <div class="rank_text">
+            <span><img src="../images/bobea/number3.png" alt=""></span>
+            <div class="rank_t">
+              <span>현대 투스카니</span>
+            </div>
+          </div>
+          <div class="rank_picture">
+            <span><img src="../images/bobea/issue3.png" alt=""></span>
+          </div>
+        </div>
       </div>
 
     </div>
