@@ -10,6 +10,9 @@
     *{margin: 0; padding: 0;}
     ul,ol{list-style: none;}
     a{text-decoration: none; color: #000;}
+
+    /*원치않는 여백발생때문(img가 인라인블록이기 때문에)*/
+    /*img{border:0;} --> 익스플로러창에서는 파랑색 테두리가 뜸 그걸없애기위함*/
     img{vertical-align: top;}
     div{display: block;}
 
@@ -554,22 +557,92 @@
     .wrap .right_contents .car_rank{
       margin-top: 40px;
       width: 236px;
-      height: 230px;
+      height: 200px;
       outline: 1px #000 solid;
       font-size: 13px;
     }
 
     .wrap .right_contents .rank_text{
-      height: 88px;
+      height: 70px;
       width: 145px;
-      outline: 1px #000 solid;
       float: left;
     }
     .wrap .right_contents .rank_picture{
       width: 90px;
-      height: 88px;
-      outline: 1px #000 solid;
+      height: 50px;
       float: right;
+    }
+
+    .brand_story .cover {
+      width: 236px;
+      float: left;
+    }
+
+    .footer{
+      height: 30px; width: 990px;
+      outline: 1px #000 solid;
+      clear: left;
+      padding-top: 5px;
+    }
+
+    .footer .star{float: left;}
+
+    .footer .site_map{float: right;}
+    .footer .site_map img{width: 8px; height: 8px; margin-top: 8px;}
+
+    .footer_list{
+      height: 214px; width: 990px;
+      outline: 1px #000 solid;
+      font-size: 15px;
+    }
+
+    .footer_list .list1{float: left; margin-left: 40px; margin-top: 10px;}
+    .footer_list .list2{float: left; margin-left: 40px; margin-top: 10px;}
+    .footer_list .list3{float: left; margin-left: 40px; margin-top: 10px;}
+    .footer_list .list4{float: left; margin-left: 40px; margin-top: 10px;}
+    .footer_list .list5{float: left; margin-left: 40px; margin-top: 10px;}
+    .footer_list .list6{float: left; margin-left: 40px; margin-top: 10px;}
+    .footer_list .list7{float: left; margin-left: 40px; margin-top: 10px;}
+
+    .footer_number{
+      outline: 1px #000 solid;
+      width: 990px; height: 31px;
+      font-size: 12px;
+    }
+    /*.footer_number ul{list-style: disc;}*/
+    .footer_number ul>li{
+      float: left;
+      /*margin-right: 5px;
+      margin-top: 4px;*/
+      margin: 4px 2px 0 3px;
+    }
+
+    .last{
+      font-size: 13px;
+      outline: 1px #000 solid;
+      width: 700px;
+      height: 145px;
+      text-align: center;
+      margin-left: 150px;
+    }
+
+    .last ul{
+      display: inline-block;
+      /*text-align: center;*/
+      /*vertical-align: middle;*/
+    }
+    .last ul>li{
+      float: left;
+      margin-right: 10px;
+    }
+    /*ul의 직계li*/
+    .last .last_2 ul>li{
+      width: 700px;
+
+      /*목록요소자체를 가운데로 설정
+          --> ul, ol의 기본가로크기는 100%이므로 가로 크기를 지정해줘야 가운데정렬함*/
+      margin-left: auto;
+      margin-right: auto;
     }
 
 
@@ -1026,8 +1099,167 @@
         </div>
       </div>
 
+      <div class="issue_bottom">
+        <span class="rightMain_text">보배드림 이야기</span>
+        <div class="rightMain_number">
+          <span>더보기</span>
+          <img src="../images/bobea/icon_r.gif" alt="">
+        </div>
+      </div>
+
+      <div class="brand_story">
+        <div class="story">
+          <span><img src="../images/bobea/story.jpg" alt=""></span>
+          <div class="cover">
+            <div class="cover_div">
+              <div class="one">
+                BMW 1시리즈의 가성비
+              </div>
+            </div>
+            <div class="cover_div2">
+              <span><a href="#"><img src="../images/bobea/icon_l.gif" alt="" style="width:18px; height:16px;"></a></span>
+              <span><a href="#"><img src="../images/bobea/icon_r.gif" alt="" style="width:18px; height:16px;"></a></span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      </div>
+
     </div>
 
+    <div class="footer">
+      <div class="star">
+        <span><strong>공지사항</strong></span>
+        <span>보배드림 어플 업데이트 안내</span>
+      </div>
+      <div class="site_map">
+        <span><strong>서비스 전체보기</strong><img src="../images/bobea/bd_icon.png" alt=""></span>
+      </div>
+    </div>
+
+    <div class="footer_list">
+      <div class="list1">
+        <ul>
+          <li><a href="#"><strong>사이버매장</strong></a></li>
+          <li><a href="#">국산차매장</a></li>
+          <li><a href="#">수입차매장</a></li>
+          <li><a href="#">튜닝카매장</a></li>
+          <li><a href="#">승용자매장</a></li>
+          <li><a href="#">스포츠카매장</a></li>
+          <li><a href="#">4륜/SUV매장</a></li>
+          <li><a href="#">벤/승합차매장</a></li>
+          <li><a href="#">오토갤러리매장</a></li>
+        </ul>
+      </div>
+      <div class="list2">
+        <ul>
+          <li><a href="#"><strong>국산중고차</strong></a></li>
+          <li><a href="#">전체차량</a></li>
+          <li><a href="#">인기차량</a></li>
+          <li><a href="#">확인차량</a></li>
+          <li><a href="#">경매차량</a></li>
+          <li><a href="#">특수/특장차</a></li>
+          <li><a href="#">국산차매장</a></li>
+          <li><a href="#">중고차시세</a></li>
+          <li><a href="#">차종별검색</a></li>
+        </ul>
+      </div>
+      <div class="list3">
+        <ul>
+          <li><a href="#"><strong>수입중고차</strong></a></li>
+          <li><a href="#">전체차량</a></li>
+          <li><a href="#">인기차량</a></li>
+          <li><a href="#">확인차량</a></li>
+          <li><a href="#">경매차량</a></li>
+          <li><a href="#">특수/특장차</a></li>
+          <li><a href="#">국산차매장</a></li>
+          <li><a href="#">중고차시세</a></li>
+          <li><a href="#">차종별검색</a></li>
+        </ul>
+      </div>
+      <div class="list4">
+        <ul>
+          <li><a href="#"><strong>내차팔기</strong></a></li>
+          <li><a href="#">사이버매몰등록</a></li>
+          <li><a href="#">국산차등록</a></li>
+          <li><a href="#">수입차등록</a></li>
+          <li><a href="#">매물등록권 구입</a></li>
+        </ul>
+      </div>
+      <div class="list5">
+        <ul>
+          <li><a href="#"><strong>게시판</strong></a></li>
+          <li><a href="#">베스트글</a></li>
+          <li><a href="#">자유게시판</a></li>
+          <li><a href="#">질문과 답변</a></li>
+          <li><a href="#">시승기</a></li>
+          <li><a href="#">내차소개</a></li>
+          <li><a href="#">자동차동영상</a></li>
+          <li><a href="#">특종사진</a></li>
+          <li><a href="#">레이싱모델</a></li>
+        </ul>
+      </div>
+      <div class="list6">
+        <ul>
+          <li><a href="#"><strong>자료실</strong></a></li>
+          <li><a href="#">내차소개</a></li>
+          <li><a href="#">자동차동영상</a></li>
+          <li><a href="#">특종사진</a></li>
+          <li><a href="#">레이싱모델</a></li>
+        </ul>
+      </div>
+      <div class="list7">
+        <ul>
+          <li><a href="#"><strong>주요서비스</strong></a></li>
+          <li><a href="#">오토바이</a></li>
+          <li><a href="#">용품장터</a></li>
+          <li><a href="#">보배모델</a></li>
+          <li><a href="#">경매차량</a></li>
+          <li><a href="#">공매차량</a></li>
+          <li><a href="#">이벤트</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer_number">
+      <ul>
+        <li><strong>이용문의</strong>02-784-2359</li>
+        <li><strong>차량광고</strong>02-454-5811</li>
+        <li><strong>제휴문의</strong>070-454-1547</li>
+        <li><strong>협력업체</strong>070-4548-8452</li>
+        <li><strong>광고문의</strong>070-452-4584</li>
+        <li><strong>커뮤니티</strong>02-1257-8531</li>
+        <li><strong>신고센터</strong>장애/오류신고 | 권리침해신고</li>
+      </ul>
+    </div>
+
+    <div class="last">
+      <div class="last_1">
+        <ul>
+          <li><a href="#"><strong>회사소개</strong></a></li>
+          <li><a href="#"><strong>제휴광고</strong></a></li>
+          <li><a href="#"><strong>협력업체신청</strong></a></li>
+          <li><a href="#"><strong>인재채용</strong></a></li>
+          <li><a href="#"><strong>이용약관</strong></a></li>
+          <li><a href="#"><strong>개인정보취급방침</strong></a></li>
+          <li><a href="#"><strong>고객센터</strong></a></li>
+          <li><a href="#"><strong>사이트맵</strong></a></li>
+        </ul>
+      </div>
+
+      <div class="last_2">
+        <ul>
+          <li><br />사업자등록번호 : 117-81-64543| 통신판매업신고번호 : 제 2013-서울양천-0465호<img src="../images/bobea/foot_comapny.gif" alt=""></li>
+          <li>주식회사 보배네트워크 주소 :  서울 영등포구 양평동 3가 16 우림E비즈센터 11,12층 대표이사 : 김보배 </li>
+          <li>개인정보관리책임자 : 이은호  대표전화 : 02-784-2329 </li>
+          <li>opyright ⓒ Kakao Corp. All rights reserved.</li>
+          <li>보배드림은 통신판매중개자이며 차량판매의 당사자가 아닙니다. <br />따라서 보배드림은 차량 거래검토 및 거래에 대하여 어떤 책임을 지지 않습니다.</li>
+        </ul>
+      </div>
+
+    </div>
   </div>
 </body>
 </html>
